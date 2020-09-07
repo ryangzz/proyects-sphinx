@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C - Strings &#8212; documentación de 01ejemplo - 1.0</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/translations.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="prev" title="Intro" href="intro.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="c-strings">
+<h1>C - Strings<a class="headerlink" href="#c-strings" title="Enlazar permanentemente con este título">¶</a></h1>
+<p>Las cadenas son en realidad una matriz unidimensional de caracteres terminados por un carácter nulo “\ 0”. Por lo tanto, una cadena terminada en nulo contiene los caracteres que componen la cadena seguida de un nulo .</p>
+<p>La siguiente declaración e inicialización crean una cadena que consta de la palabra «Hola». Para contener el carácter nulo al final de la matriz, el tamaño de la matriz de caracteres que contiene la cadena es uno más que el número de caracteres de la palabra «Hola».</p>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="kt">char</span> <span class="n">greeting</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">&#39;H&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span> <span class="sc">&#39;o&#39;</span><span class="p">,</span> <span class="sc">&#39;\0&#39;</span><span class="p">};</span>
+</pre></div>
+</div>
+<p>Si sigue la regla de inicialización de la matriz, puede escribir la declaración anterior de la siguiente manera:</p>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="kt">char</span> <span class="n">greeting</span><span class="p">[]</span> <span class="o">=</span> <span class="s">&quot;Hello&quot;</span><span class="p">;</span>
+</pre></div>
+</div>
+<p><img alt="picture alt" src="https://www.tutorialspoint.com/cprogramming/images/string_representation.jpg" /></p>
+<div class="section" id="poniendo-en-la-practica-lo-aprendido">
+<h2>Poniendo en la practica lo aprendido<a class="headerlink" href="#poniendo-en-la-practica-lo-aprendido" title="Enlazar permanentemente con este título">¶</a></h2>
+<p>Solo veremos un pequeño programa de como se veria en realidad ya completo</p>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+
+<span class="kt">int</span> <span class="nf">main</span> <span class="p">()</span> <span class="p">{</span>
+
+   <span class="kt">char</span> <span class="n">greeting</span><span class="p">[</span><span class="mi">6</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="sc">&#39;H&#39;</span><span class="p">,</span> <span class="sc">&#39;e&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span> <span class="sc">&#39;l&#39;</span><span class="p">,</span> <span class="sc">&#39;o&#39;</span><span class="p">,</span> <span class="sc">&#39;\0&#39;</span><span class="p">};</span>
+   <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Greeting message: %s</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span> <span class="n">greeting</span> <span class="p">);</span>
+   <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h3><a href="index.html">Tabla de contenido</a></h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="intro.html">Intro</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">C - Strings</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#poniendo-en-la-practica-lo-aprendido">Poniendo en la practica lo aprendido</a></li>
+</ul>
+</li>
+</ul>
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="intro.html" title="capítulo anterior">Intro</a></li>
+  </ul></li>
+</ul>
+</div>
+  <div role="note" aria-label="source link">
+    <h3>Esta página</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/strings.md.txt"
+            rel="nofollow">Mostrar el código</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, brayan-gzz.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/strings.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
