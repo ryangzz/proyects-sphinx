@@ -13,6 +13,7 @@ Bienvenido a  Documentando Codigo en Python's!
 
    docs/suma
    docs/modules
+   docs/sumaLista
 
 
 Indices and tables

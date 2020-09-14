@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Resumen: código de modulo &mdash; documentación de Documentando Python - 1.0</title>
+  <title>sumaLista &mdash; documentación de Documentando Python - 1.0</title>
   
 
   
@@ -132,7 +132,9 @@
     
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
         
-      <li>Resumen: código de modulo</li>
+          <li><a href="index.html">Código de módulo</a> &raquo;</li>
+        
+      <li>sumaLista</li>
     
     
       <li class="wy-breadcrumbs-aside">
@@ -147,10 +149,29 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <h1>Todos los módulos para los cuales disponen código</h1>
-<ul><li><a href="suma.html">suma</a></li>
-<li><a href="sumaLista.html">sumaLista</a></li>
-</ul>
+  <h1>Código fuente para sumaLista</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Suma de los elementos de una lista en python</span>
+<span class="sd">============================================</span>
+<span class="sd">En este modulo veras como podemos sumas los elementos que se encuentren</span>
+<span class="sd">dentro de una lista por medio de una funcion que recibe como parametro</span>
+<span class="sd">dicha lista</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<div class="viewcode-block" id="sumaLista"><a class="viewcode-back" href="../docs/sumaLista.html#sumaLista.sumaLista">[documentos]</a><span class="k">def</span> <span class="nf">sumaLista</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    **Esta funcion recibe una lista y acomula la sumatoria recorriendo</span>
+<span class="sd">    cada elemento y al final retorna el total acumulado**</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">suma</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">num</span> <span class="ow">in</span> <span class="nb">list</span><span class="p">:</span>
+        <span class="n">suma</span><span class="o">+=</span><span class="n">num</span>
+    <span class="k">return</span> <span class="n">suma</span></div>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">**Definicion de la lista**</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="n">lista</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">sumaLista</span><span class="p">(</span><span class="n">lista</span><span class="p">))</span>
+</pre></div>
 
            </div>
            
